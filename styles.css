@@ -44,6 +44,9 @@ header {
     text-align: center;
     background: linear-gradient(207.8deg, #201e1c 16.69%, #1e62a4 100%);
 }
+.electronica {
+    height: 150px;
+}
 header img {
     width: 200px;
     margin-top: 60px;
@@ -109,6 +112,13 @@ main {
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+}
+.temas {
+    padding-top: 40px;
+}
+.lista-proyectos {
+    text-align: left;
+    font-size: 16px;
 }
 .main-exchange-container--title {
     width: 90%;
@@ -485,4 +495,17 @@ footer .left {
 .left p {
     text-decoration: none;
     color: var(--just-white);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.button-extra {
+    list-style: none;
+}
+.button-extra a {
+    width: 100%;
+    margin: 10px;
+    font-size: 18px;
 }
