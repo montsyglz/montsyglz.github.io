@@ -1,11 +1,126 @@
+<!-- Batatabit curso Mobile First
+Link de figma:
+https://www.figma.com/file/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=44%3A593
+https://platzi.com/cursos/mobile-first/  -->
+
 <!DOCTYPE html>
-
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montserrat González Alamán</title>
+    <!-- Se saco el link de google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Link a estilos base css -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Link a estilos cuando hay un breakpoint -->
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 
+</head>
 <body>
-    <h1>Montsy's Goals</h1>
-    <p>This is where I'll write the things I've done in order to accomplish my goals.</p>
-    <h3>Currently in progess!</h3>
+    <header>
+        <img src="./assets/img/tecnologico-de-monterrey-white.png" alt="">
+        <div class="header--title-container"> <!-- header(bloque principal, titlecontainer es el contenido) METODOLOGIA BEM -->
+            <h1>Mi Portafolio - Montserrat González Alamán</h1>
+            <p>Sigue leyendo para conocer más sobre mis conocimientos y competencias en mi portafolio.</p>
+            <a href="#plans" class="header--button">Conoce mis competencias <span></span> </a>
+        </div>
+    </header>
+    <main>
+        <section class="main-exchange-container">
+            <div class="backgroundImg"></div>
+            <div class="main-exchange-container--title">
+                <h2>Datos Personales</h2>
+                <p>Montserrat González Alamán</p>
+                <p>Ingeniero en Mecatrónica (IMT)</p>
+                <p>montsyglzalaman@gmail.com</p>
+                <p>+52 871 269 0357</p>
+                <a href="www.linkedin.com/in/montserrat-gonzalez-alaman">LinkedIn</a>
+            </div>
+        </section>
+        <section id="plans" class="main-product-detail">
+            <div class="product-detail--title">
+                <h2>Retos y evidencias</h2>
+                <p>En esta sección se muestran proyectos donde se trabajó en las áreas de electrónica, programación, manufactura, robótica y control. Ve a más detalle en: <a href="https://miscompetenciastec21.tec.mx/elumen/portfolio/7AWRdAYT9afG78K">Mis Competencias</a></p>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card">
+                    <span class="clock"></span>
+                    <p class="product--card-title">Brazo Robótico</p>
+                    <p class="product--card-body">Este reto se diseñó y armó un brazo robótico, y se aplicaron las disciplinas de robótica, control y programación.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="eye"></span>
+                    <p class="product--card-title">Automatización de celda</p>
+                    <p class="product--card-body">Se programó un PLC y dos robots para automatizar la celda, con redes industriales para comunicación. Las disciplinas aplicadas fueron la automatización y sistemas industriales.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="dollar-sign"></span>
+                    <p class="product--card-title">Remadora</p>
+                    <p class="product--card-body">Se diseñó lo mecánico en un programa CAD, se eligió el material y se realizó el diseño electrónico. Se aplicó la electrónica, mecánica y manufactura.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="check-circle"></span>
+                    <p class="product--card-title">URBISMAP</p>
+                    <p class="product--card-body">Es un proyecto sobre una página web para consultar obras de agua, identificar inconsistencias y fomentar la participación ciudadana. Cómo On campus intern apliqué la programación.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="eye"></span>
+                    <p class="product--card-title">Gemelo Digital</p>
+                    <p class="product--card-body">Se realizó un gemelo digital de un proceso de la planta de KONE para encontrar hallazgos y probar ideas.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="clock"></span>
+                    <p class="product--card-title">Aplicación IoT</p>
+                    <p class="product--card-body">Se realizó una aplicación IoT que se conectaba a una base de datos sobre el consumo de agua para consulta. Se aplicaron temas de sistemas ciberfísicos.</p>
+                </article>
+            </section>
+        </section>
+        <section class="main-plans-container"> <!--Se pone como id para poder usarlo como href #plans en el boton de inicio-->
+            <div class="plans--title">
+                <h2>Habilidades y actitudes</h2>
+                <p>A continuación se muestran otras competencias de valor desarrolladas.</p>
+            </div>
+            <section class="plans-container--slider">
+                <article class="plans-container--card">
+                    <p class="recomendado">Comunicación efectiva</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Video Ensayo sobre carrera</h3>
+                        <p class="plan-card--saving">En esta unidad de formación aprendí sobre la comunicación efectiva, y con las presentaciones y proyectos he podido practicar esa habilidad.</p>
+                        <button class="plan-card--ca" style="margin-top: 39px;">Leer más <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <p class="recomendado">Uso de normas y estándares</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Evidencia de normas y estándares</h3>
+                        <p class="plan-card--saving">En el transcurso de la carrera aprendí sobre las normas y estándares a seguir en la industria y que se aplica en el diseño.</p>
+                        <button class="plan-card--ca">Leer más <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <p class="recomendado">Trabajo en equipo</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Proyectos realizados</h3>
+                        <p class="plan-card--saving">He realizado una variedad de proyectos en equipo, y es una habilidad bien formada por la constante aplicación.</p>
+                        <button class="plan-card--ca" style="margin-top: 35px;">Leer más <span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="left">
+            <ul>
+                <li> <a href="www.linkedin.com/in/montserrat-gonzalez-alaman">Linkedin</a> </li>
+                <li> <p>montsyglzalaman@gmail.com</p> </li>
+                <li> <p>+52 871 269 0357</p> </li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="./assets/img/Logo_del_ITESM.png" alt="Logo de ITESM" style="width: 20%;">
+        </section>
+    </footer>
 </body>
-
 </html>
